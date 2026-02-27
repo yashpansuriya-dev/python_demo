@@ -1,6 +1,10 @@
+"""
+    It is Program for All the different patterns logic ,
+
+    I builded Strong Loop logic through this various Patterns
+"""
+
 n =5 #lines for pattern
-
-
 
 print("\n\nPattern 1")
 for i in range(1,n+1):

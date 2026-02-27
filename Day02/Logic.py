@@ -1,3 +1,9 @@
+""" 
+ Here , I explored all logical operators , boolean logic along with for and while loop , 
+ and some keywords like Pass,Continue, break.
+"""
+
+
 #Student Marks Checks with if-else Logic
 marks = 50
 
@@ -103,3 +109,7 @@ for i in range(10):
 
 for i in range(10): #indentation error
     continue
+
+
+
+
