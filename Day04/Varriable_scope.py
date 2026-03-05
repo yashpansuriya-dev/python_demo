@@ -1,61 +1,48 @@
+# -------------------------------------------------------------------
 
-# def fun_1(a):
-#     a = 10
-#     print("A in function : ",a)
+# Any varriable created inside function is local varrible 
+# unless it has 'global'keyword . and it can be accessed only
+# within function .
 
-# def fun_2(a):
-#     global a = 10
-#     print("A in function : ",a)
+def my_function():
+    x = 10  # Local variable 
+    print("Inside function:", x)
 
+my_function()
+# print(x)  # Error  x is not defined outside the function
 
-# a = 5
-# print("A before function : ", a)
-# fun_1(a)
-# print("A after function : ", a)
+# -------------------------------------------------------------------
 
-# global b = 5
-# print("\nB before function : ", a)
-# fun_1(b)
-# print("B after function : ", a)
+# any varrible created outside function is global varriable
 
-# Global variable
-x = 10
+y = 20  # Global variable
 
+def my_function():
+    print("Accessing global y:", y)  # Works fine
 
-def show_value() -> None:
-    """
-    Demonstrates local and global variable scope.
-    """
-    x = 5  # Local variable (different from global x)
-    print(f"Inside function (local x): {x}")
+my_function()
+print("Outside function:", y)
+
+# -------------------------------------------------------------------
 
 
-def show_global_value() -> None:
-    """
-    Accessing global variable inside function.
-    """
-    print(f"Inside function (global x): {x}")
+count = 0  # Global variable
+
+def increment():
+    global count  # Declare we want to use the global variable
+    count += 1
+
+increment()
+print("Count after increment:", count)  # Output: 1
+
+# -------------------------------------------------------------------
 
 
-def modify_global() -> None:
-    """
-    Modifies the global variable using 'global' keyword.
-    """
-    global x
-    x = 20
+value = 100  # Global
 
+def test():
+    value = 50  # Local shadows global
+    print("Inside function:", value)
 
-def main() -> None:
-    print(f"Before function call (global x): {x}")
-
-    show_value()
-    print(f"After show_value (global x): {x}")
-
-    show_global_value()
-
-    modify_global()
-    print(f"After modify_global (global x): {x}")
-
-
-if __name__ == "__main__":
-    main()
+test()
+print("Outside function:", value)  # Global remains unchanged

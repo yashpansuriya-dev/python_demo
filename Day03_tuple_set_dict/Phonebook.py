@@ -10,9 +10,8 @@ import string
 
 # All Functions of Phonebook - add , delete , list , search
 
+
 # Add contact function
-
-
 def phonebook_add(name: string, number: string, contacts: list) -> list:
     """
         It takes name and mobile number from user , and
@@ -32,9 +31,8 @@ def phonebook_add(name: string, number: string, contacts: list) -> list:
     else:
         print("Mobile number should be 10 digit .")
 
+
 # Searching contact
-
-
 def phonebook_search(name: string, contacts: list) -> dict:
     """
         It Serch the contact of input name and
@@ -48,9 +46,11 @@ def phonebook_search(name: string, contacts: list) -> dict:
     """
 
     print("Here is detail of ", name)
+    
 
     for c in contacts:
         # Iterates through all contacts and print who matches name
+
         if c['name'] == name:
             print(f"\n Name : {c['name']}, Mobile number : {c['number']}")
             return c
@@ -59,9 +59,8 @@ def phonebook_search(name: string, contacts: list) -> dict:
 
     print("Wrong name ! , Please Enter correct name")
 
+
 # List contact
-
-
 def phonebook_list(contacts: list) -> None:
     """
         It prints all the info of contacts ,
@@ -81,8 +80,6 @@ def phonebook_list(contacts: list) -> None:
 
 
 # Deleting Contact
-
-
 def phonebook_del(name: string, contacts: list) -> dict:
     """
         It delete the record of that contact
@@ -100,7 +97,6 @@ def phonebook_del(name: string, contacts: list) -> dict:
     return del_contact
 
 # ---------------------------------------------------------------------
-
 
 def main() -> None:
     contacts = []
