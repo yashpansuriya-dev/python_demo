@@ -189,7 +189,8 @@ def main() -> None :
         print("Remainder :      5 ")
         print("Power :          6 ")
         print("Sqaure root :    7 ")
-        print("History  :    8 ")
+        print("History  :       8 ")
+        print("Exit App       : 0")
 
         c = int(input("\nEnter Your choice : "))
 
@@ -198,6 +199,8 @@ def main() -> None :
             print("Your Square root is : ", sqrt(n))
         elif c == 8:
             get_history(history_list)
+        elif c == 0:
+            break
         else:
             a = get_number("Enter First number : ")
             b = get_number("Enter Second number : ")
@@ -225,8 +228,6 @@ def main() -> None :
                 val = f"{a} ^ {b} = {power(a, b)}"
                 print(val)
                 add_history(val, history_list)
-            elif c == 0:
-                break
             else:
                 print("Invalid Choice")
             
