@@ -174,7 +174,7 @@ def sqrt(a: float) -> float:
 
 
 def main() -> None :
-    """ Main Function ."""
+    """ Main Function .""" 
     history_list = []
 
     print("-----------------------CLI Calculator--------------------")
@@ -230,7 +230,6 @@ def main() -> None :
                 add_history(val, history_list)
             else:
                 print("Invalid Choice")
-            
             
 # -------------------------------------------------------------------
 
