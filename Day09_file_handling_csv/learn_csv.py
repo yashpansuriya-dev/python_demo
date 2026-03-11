@@ -10,29 +10,75 @@ import csv
 
 # -------------------------------------------------------------------
 
-def writing_csv(file_name, fields, rows):
-    with open(file_name, "w", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(fields)
-        writer.writerows(rows)
+def writing_csv(file_name: str, fields: list, rows: list):
+    """
+    Writes data into a CSV file.
+
+    Args:
+        file_name (str): name of the CSV file to create or overwrite.
+        fields (list):  header row
+        rows (list[list]): List of rows contain data
+
+    Raises:
+        PermissionError: If the file cannot be accessed or written.
+        Exception: For any unexpected interruption during writing.
+    """
+    try:
+        with open(file_name, "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(fields)
+            writer.writerows(rows)
+    except PermissionError:
+        print("File is not accessible")
+    except Exception:
+        print("Some Interupttion occurs")
 
 
 # Reading CSV
-def reading_csv(file_name) -> list:
+def reading_csv(file_name : str) -> list:
+    """
+    Reads data from CSV file.
+
+    Args:
+        file_name (str): name of the CSV file to create or overwrite.
+    
+    Returns:
+        list : returns [fields, rows] 
+            where, fields : header fields
+                    rows : list of data
+    Raises:
+        FileNotFoundError: If file does not exist.
+    """
     fields = []
     rows = []
 
-    with open(file_name, "r") as f:
-        reader = csv.reader(f)
-        fields = next(reader)
+    try:
+        with open(file_name, "r") as f:
+            reader = csv.reader(f)
+            fields = next(reader)
+            
+            for row in reader:
+                rows.append(row)
 
-        for row in reader:
-            rows.append(row)
+    except FileNotFoundError:
+        print("File Not Founded")
 
     return [fields,rows]
 
 
-def csv_to_dict(filename) -> list:
+def csv_to_dict(filename: str) -> list:
+    """
+    Reads from csv file , convert into dict
+    and returns it
+
+    Args:
+        file_name (str): name of the CSV file to create or overwrite.
+    
+    Returns:
+        list : returns [fields, rows] 
+            where, fields : header fields
+                    rows : list of data
+    """
     data = reading_csv(filename)
     fields, rows = data[0],data[1]
 
@@ -41,17 +87,34 @@ def csv_to_dict(filename) -> list:
     for row in rows:
         details.append({fields[0]:row[0] ,
                         fields[1]:row[1] ,
-                        fields[2]:row[2] ,})
+                        fields[2]:row[2] })
     return details
 
 
-def csv_to_dict2(filename):
-    with open(filename, 'r') as f:
-        data_list = []  
+def csv_to_dict2(filename) -> list:
+    """ 
+    convert csv file into dict with use of
+    DictReader .
 
-        reader = csv.DictReader(f)
-        for row in reader:
-            data_list.append(row)
+    Args:
+        filename (str) : name of file
+    
+    Returns : 
+        list : list of dicts . with data
+        
+    Raises:
+        FileNotFoundError: If file does not exist.
+
+    """
+    try:
+        with open(filename, 'r') as f:
+            data_list = []  
+
+            reader = csv.DictReader(f)
+            for row in reader:
+                data_list.append(row)
+    except FileNotFoundError:
+        print("File Not found")
     
     return data_list
 

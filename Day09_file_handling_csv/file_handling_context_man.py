@@ -114,17 +114,8 @@ def main() -> None:
 
     print("\n\nnew_file2.txt : ", read_file("newfile_2.txt"))
 
-def main2():
-    print("hello")
-    with open("file.txt" , "w") as f:
-        f.write("yash\n4")
-    
-    with open("file.txt" , "rb") as f:
-        print(f.read(1)[0])
-    
-
 # -------------------------------------------------------------------
 
 
 if __name__ == "__main__":
-    main2()
+    main()
