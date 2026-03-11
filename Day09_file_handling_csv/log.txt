@@ -1,0 +1,16 @@
+2026-03-11 15:22:13.201627 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:23:20.319742 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:14.965197 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:14.966779 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:15.602807 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:15.605002 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:16.195070 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:16.197062 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:17.195015 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:17.197530 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:35.634999 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:35.637497 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:36.231585 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:36.233331 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
+2026-03-11 15:24:36.748830 INFO   :...mailslot_create: creating mailslot for terminate
+2026-03-11 15:24:36.750710 TRACE  :........router_forward_getOI:         source address:   9.67.116.98
