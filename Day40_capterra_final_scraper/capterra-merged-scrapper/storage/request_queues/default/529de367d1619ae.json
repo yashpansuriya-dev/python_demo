@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/149254/sprout-hr-payroll/reviews?page=1",
+  "url": "https://www.capterra.com/p/149254/Sprout-HR-Payroll/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Sprout",
+      "url": "https://www.capterra.com/p/149254/Sprout-HR-Payroll",
+      "rating": "4.7",
+      "reviews_count": "479",
+      "description": "Sprout: An end-to-end set of cloud solutions for streamlining your HR, Payroll, and Business operations. Learn more about Sprout"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

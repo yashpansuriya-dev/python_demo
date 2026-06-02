@@ -1,0 +1,74 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "Google LinkedIn Decision Maker Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "company_name": {
+            "title": "Company name",
+            "type": "string",
+            "description": "Company name used in Google queries, for example: Techforce Global.",
+            "default": "Techforce Global",
+            "editor": "textfield"
+        },
+        "decision_makers_only": {
+            "title": "Decision makers only",
+            "type": "boolean",
+            "description": "When enabled, only save profiles whose Google snippet or LinkedIn profile text matches decision-maker keywords.",
+            "default": true
+        },
+        "role_keywords": {
+            "title": "Role Keywords",
+            "type": "array",
+            "description": "Custom title filters used to build Google queries.",
+            "editor": "stringList",
+            "default": [
+            "Founder",
+            "CEO",
+            "CTO",
+            "Director",
+            "HR",
+            "Head",
+            "VP",
+            "Manager",
+            "Talent Acquisition"
+            ]
+        },
+        "max_google_results": {
+            "title": "Maximum profiles",
+            "type": "integer",
+            "description": "Maximum unique LinkedIn profile URLs to collect from Google.",
+            "default": 100,
+            "minimum": 1
+        },
+        "visit_linkedin_profiles": {
+            "title": "Visit LinkedIn profiles",
+            "type": "boolean",
+            "description": "Optional enrichment. When disabled, the Actor uses Google result title/snippet only and does not open LinkedIn profiles.",
+            "default": false,
+            "editor":"hidden"
+        },
+        "headless": {
+            "title": "Headless browser",
+            "type": "boolean",
+            "description": "Set false locally if you need to observe Google or LinkedIn pages.",
+            "editor":"hidden",
+            "default": true
+        },
+        "use_apify_proxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Enable Apify Proxy for browser traffic.",
+            "default": false
+        },
+        "proxy_groups": {
+            "title": "Proxy groups",
+            "type": "array",
+            "description": "Apify Proxy groups to use when proxy is enabled. GOOGLE_SERP is recommended for Google search result pages.",
+            "default": ["GOOGLE_SERP"],
+            "editor": "hidden"
+
+        }
+    },
+    "required": ["company_name"]
+}

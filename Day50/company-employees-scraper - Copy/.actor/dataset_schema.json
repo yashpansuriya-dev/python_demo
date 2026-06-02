@@ -1,0 +1,67 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {
+        "name": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string"
+        },
+        "designation": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "company_url": {
+            "type": "string"
+        },
+        "page_number": {
+            "type": "integer"
+        },
+        "position_on_page": {
+            "type": "integer"
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "Employees",
+            "transformation": {
+                "fields": ["name", "role", "location", "url", "company_url", "page_number"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "role": {
+                        "label": "Designation / Role",
+                        "format": "text"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "url": {
+                        "label": "Profile URL",
+                        "format": "link"
+                    },
+                    "company_url": {
+                        "label": "Company URL",
+                        "format": "link"
+                    },
+                    "page_number": {
+                        "label": "Page",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}

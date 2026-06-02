@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/168685/factorial-hr-software/reviews?page=1",
+  "url": "https://www.capterra.com/p/168685/Factorial-HR-Software/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Factorial",
+      "url": "https://www.capterra.com/p/168685/Factorial-HR-Software",
+      "rating": "4.4",
+      "reviews_count": "312",
+      "description": "Factorial streamlines HR processes for every stage of the employee life cycle so HR can focus on what really matters. Learn more about Factorial"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

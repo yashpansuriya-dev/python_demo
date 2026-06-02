@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/118042/webhr/reviews?page=1",
+  "url": "https://www.capterra.com/p/118042/WebHR/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "WebHR",
+      "url": "https://www.capterra.com/p/118042/WebHR",
+      "rating": "4.3",
+      "reviews_count": "537",
+      "description": "Cloud-based HR solution that helps businesses streamline everything from hiring to retirement, covering all HR needs. Learn more about WebHR"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

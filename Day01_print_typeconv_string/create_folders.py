@@ -12,3 +12,8 @@ for i in range(31, 35):
     os.makedirs(folder_name, exist_ok=True)
 
 print("Folders created successfully!")
+
+
+
+
+

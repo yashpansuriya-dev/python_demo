@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/133745/paycor-perform/reviews?page=1",
+  "url": "https://www.capterra.com/p/133745/Paycor-Perform/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Paycor",
+      "url": "https://www.capterra.com/p/133745/Paycor-Perform",
+      "rating": "4.3",
+      "reviews_count": "3038",
+      "description": "Unlock the power of data with Paycor Analytics. Transform complex workforce data into actionable insights for better decision-making. Learn more about Paycor"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

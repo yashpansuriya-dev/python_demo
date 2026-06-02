@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/66908/workday-hcm/reviews?page=1",
+  "url": "https://www.capterra.com/p/66908/Workday-HCM/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Workday HCM",
+      "url": "https://www.capterra.com/p/66908/Workday-HCM",
+      "rating": "4.5",
+      "reviews_count": "1749",
+      "description": "Workday HCM helps master the transition to a new era of work, with a comprehensive global HR suite for core HR, talent, and benefits. Learn more about Workday HCM"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

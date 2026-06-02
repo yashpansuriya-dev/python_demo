@@ -1,0 +1,39 @@
+{
+  "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Contacts",
+      "transformation": {
+        "fields": [
+          "status",
+          "start_url",
+          "final_url",
+          "title",
+          "emails",
+          "phones",
+          "addresses",
+          "linkedin",
+          "social_links",
+          "pages_scraped"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "status": { "label": "Status", "format": "text" },
+          "start_url": { "label": "Start URL", "format": "link" },
+          "final_url": { "label": "Final URL", "format": "link" },
+          "title": { "label": "Title", "format": "text" },
+          "emails": { "label": "Emails", "format": "array" },
+          "phones": { "label": "Phones", "format": "array" },
+          "addresses": { "label": "Addresses", "format": "array" },
+          "linkedin": { "label": "LinkedIn", "format": "array" },
+          "social_links": { "label": "Social Links", "format": "object" },
+          "pages_scraped": { "label": "Pages Scraped", "format": "array" }
+        }
+      }
+    }
+  }
+}

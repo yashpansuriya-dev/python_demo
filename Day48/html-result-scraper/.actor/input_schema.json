@@ -1,0 +1,119 @@
+{
+  "title": "HTML Result Scraper",
+  "description": "Fetch rendered HTML content from URLs using Playwright plus browser fingerprinting and challenge detection.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "start_urls": {
+      "title": "Start URLs",
+      "description": "URLs whose rendered HTML should be saved to the dataset.",
+      "type": "array",
+      "prefill": [
+        {
+          "url": "http://www.punchrestaurant.com/"
+        },
+        {
+          "url": "http://www.damarino.com/"
+        }
+      ],
+      "editor": "requestListSources"
+    },
+    "headless": {
+      "title": "Headless Browser",
+      "description": "Run browser in headless mode. Set to false locally if a manual challenge must be solved.",
+      "type": "boolean",
+      "default": true,
+      "editor": "checkbox"
+    },
+    "wait_until": {
+      "title": "Navigation Wait Until",
+      "description": "Playwright navigation state to wait for before reading HTML.",
+      "type": "string",
+      "default": "domcontentloaded",
+      "enum": ["commit", "domcontentloaded", "load", "networkidle"],
+      "editor": "select"
+    },
+    "page_wait_seconds": {
+      "title": "Extra Page Wait Seconds",
+      "description": "Additional wait after navigation and challenge handling before collecting HTML.",
+      "type": "integer",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 30,
+      "editor": "number"
+    },
+    "max_retries": {
+      "title": "Max Retries",
+      "description": "How many times to retry a URL after navigation errors or unresolved challenges.",
+      "type": "integer",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 5,
+      "editor": "number"
+    },
+    "cf_wait_seconds": {
+      "title": "Challenge Wait Timeout Seconds",
+      "description": "How long to wait for Cloudflare-style challenges to clear.",
+      "type": "integer",
+      "default": 90,
+      "minimum": 15,
+      "maximum": 300,
+      "editor": "number"
+    },
+    "cf_refresh_attempts": {
+      "title": "Challenge Refresh Attempts",
+      "description": "How many browser-like refreshes to try when a challenge title is detected.",
+      "type": "integer",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 8,
+      "editor": "number"
+    },
+    "use_apify_proxy": {
+      "title": "Use Apify Proxy",
+      "description": "Enable Apify Proxy. Recommended on Apify Cloud for sites that block datacenter traffic.",
+      "type": "boolean",
+      "default": false,
+      "editor": "checkbox"
+    },
+    "proxy_groups": {
+      "title": "Proxy Groups",
+      "description": "Apify Proxy groups to use when proxy is enabled.",
+      "type": "array",
+      "default": ["RESIDENTIAL"],
+      "editor": "json"
+    },
+    "proxy_country": {
+      "title": "Proxy Country",
+      "description": "Two-letter country code for Apify Proxy exit node.",
+      "type": "string",
+      "default": "US",
+      "editor": "textfield",
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "session_id": {
+      "title": "Proxy Session ID",
+      "description": "Optional fixed proxy/session seed. Auto-generated if blank.",
+      "type": "string",
+      "default": "",
+      "editor": "textfield"
+    },
+    "fingerprint_seed": {
+      "title": "Fingerprint Seed",
+      "description": "Optional seed to deterministically select a browser fingerprint.",
+      "type": "string",
+      "default": "",
+      "editor": "textfield"
+    },
+    "max_html_chars": {
+      "title": "Max HTML Characters",
+      "description": "Optional limit for saved HTML size. Set 0 to save full HTML.",
+      "type": "integer",
+      "default": 0,
+      "minimum": 0,
+      "editor": "number"
+    }
+  },
+  "required": ["start_urls"]
+}

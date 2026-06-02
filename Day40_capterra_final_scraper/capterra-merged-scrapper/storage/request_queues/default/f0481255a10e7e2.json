@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/135366/activtrak/reviews?page=1",
+  "url": "https://www.capterra.com/p/135366/ActivTrak/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "ActivTrak",
+      "url": "https://www.capterra.com/p/135366/ActivTrak",
+      "rating": "4.5",
+      "reviews_count": "591",
+      "description": "ActivTrak is a work intelligence company that helps organizations understand how people and AI work together — so they can measure what Learn more about ActivTrak"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

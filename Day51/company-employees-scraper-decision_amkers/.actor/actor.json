@@ -1,0 +1,19 @@
+{
+	"$schema": "https://apify.com/schemas/v1/actor.ide.json",
+	"actorSpecification": 1,
+	"name": "company-employees-scraper",
+	"title": "Google LinkedIn Decision Maker Scraper",
+	"description": "Finds public LinkedIn profiles from Google queries, filters by decision-maker keywords, and enriches public profile details without LinkedIn login.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "python-playwright",
+		"generatedBy": "Codex with GPT-5"
+	},
+	"input": "./input_schema.json",
+	"output": "./output_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"dockerfile": "../Dockerfile"
+}

@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/129232/employee-success-platform/reviews?page=1",
+  "url": "https://www.capterra.com/p/129232/Employee-Success-Platform/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Achievers",
+      "url": "https://www.capterra.com/p/129232/Employee-Success-Platform",
+      "rating": "4.8",
+      "reviews_count": "2909",
+      "description": "Achievers is an employee recognition and rewards software trusted by 4M+ employees globally. Learn more about Achievers"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

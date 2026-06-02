@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/143606/namely/reviews?page=1",
+  "url": "https://www.capterra.com/p/143606/Namely/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Namely",
+      "url": "https://www.capterra.com/p/143606/Namely",
+      "rating": "4.2",
+      "reviews_count": "438",
+      "description": "With intuitive technology and a world-class team of experts, Namely empowers HR with a solutions for small to mid-sized businesses. Learn more about Namely"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

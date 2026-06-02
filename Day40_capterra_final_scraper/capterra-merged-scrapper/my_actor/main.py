@@ -407,9 +407,9 @@ async def main() -> None:
         headless = bool(actor_input.get("headless", False))
 
         category_query = category_name.lower().replace(" ", "-")
-        # start_url = f"https://www.capterra.com/{category_query}-software/"
-        first_category_url  = "https://www.yellowpages.com/search?search_terms=restaurants&geo_location_terms=Los+angeles"
-        # first_category_url = category_page_url(start_url, start_category_page)
+        start_url = f"https://www.capterra.com/{category_query}-software/"
+        # first_category_url  = "https://www.yellowpages.com/search?search_terms=restaurants&geo_location_terms=Los+angeles"
+        first_category_url = category_page_url(start_url, start_category_page)
 
         request_queue = await Actor.open_request_queue(name=None)
         await request_queue.add_request(
@@ -427,7 +427,7 @@ async def main() -> None:
         async with async_playwright() as playwright:
             browser = await launch_browser(playwright, headless=headless)
             context = await make_context(browser)
-            
+                     
             while products_done < total_products and (request := await request_queue.fetch_next_request()):
                 page = await context.new_page()
                 url = request.url

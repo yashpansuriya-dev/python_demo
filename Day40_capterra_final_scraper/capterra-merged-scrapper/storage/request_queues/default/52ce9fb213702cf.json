@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/198579/ukg-ready/reviews?page=1",
+  "url": "https://www.capterra.com/p/198579/UKG-Ready/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "UKG Ready",
+      "url": "https://www.capterra.com/p/198579/UKG-Ready",
+      "rating": "4.2",
+      "reviews_count": "1133",
+      "description": "Get proactive, practical, and trusted guidance automatically — that helps you help your people. Learn more about UKG Ready"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

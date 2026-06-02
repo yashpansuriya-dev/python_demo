@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/175840/adp-comprehensive-services/reviews?page=1",
+  "url": "https://www.capterra.com/p/175840/ADP-Comprehensive-Services/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "ADP Comprehensive Services",
+      "url": "https://www.capterra.com/p/175840/ADP-Comprehensive-Services",
+      "rating": "4.3",
+      "reviews_count": "265",
+      "description": "Harness the insights of ADP's AI-powered workforce analytics platform to help unify, enhance and analyze your people data. Learn more about ADP Comprehensive Services"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

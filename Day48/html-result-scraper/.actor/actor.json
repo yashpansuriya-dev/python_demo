@@ -1,0 +1,19 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "html-result-scraper",
+  "title": "HTML Result Scraper",
+  "description": "Fetches rendered HTML for one or more URLs with browser fingerprinting, human-like interaction, Cloudflare detection, and optional proxy support.",
+  "version": "0.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-playwright",
+    "generatedBy": "codex"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}

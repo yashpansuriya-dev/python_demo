@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/155895/workforcenow/reviews?page=1",
+  "url": "https://www.capterra.com/p/155895/WorkforceNow/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "ADP Workforce Now",
+      "url": "https://www.capterra.com/p/155895/WorkforceNow",
+      "rating": "4.4",
+      "reviews_count": "7198",
+      "description": "Cloud-based and AI-enabled human capital management solution that offers payroll, HR, and workforce management features for businesses. Learn more about ADP Workforce Now"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-05-20 10:36:10.821625+00:00"
+}

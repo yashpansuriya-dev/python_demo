@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/208764/tableau/reviews?page=1",
+  "url": "https://www.capterra.com/p/208764/Tableau/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Tableau",
+      "url": "https://www.capterra.com/p/208764/Tableau",
+      "rating": "4.6",
+      "reviews_count": "2351",
+      "description": "Business intelligence solution that allows businesses to connect with data sources, build interactive visualizations & share insights. Learn more about Tableau"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

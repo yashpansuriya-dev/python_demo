@@ -1,0 +1,51 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "fields": {
+        "name": { "type": "string" },
+        "linkedin_url": { "type": "string" },
+        "location": { "type": "string" },
+        "company": { "type": "object" },
+        "current_role": { "type": "object" },
+        "experience": { "type": "object" },
+        "profile_data": { "type": "object" },
+        "scraping_metadata": { "type": "object" }
+    },
+    "views": {
+        "overview": {
+            "title": "Decision Maker Intelligence",
+            "transformation": {
+                "fields": ["name", "linkedin_url", "location", "company", "current_role", "experience"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "linkedin_url": {
+                        "label": "Profile URL",
+                        "format": "link"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "company": {
+                        "label": "Company",
+                        "format": "object"
+                    },
+                    "current_role": {
+                        "label": "Current Role Intelligence",
+                        "format": "object"
+                    },
+                    "experience": {
+                        "label": "Experience",
+                        "format": "object"
+                    }
+                }
+            }
+        }
+    }
+}

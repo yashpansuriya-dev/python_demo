@@ -1,0 +1,69 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "LinkedIn Company Employees Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "company_url": {
+            "title": "Company URL",
+            "type": "string",
+            "description": "LinkedIn company page URL. The actor also tries common slug variants if this URL is unavailable.",
+            "default": "https://in.linkedin.com/company/techforceglobal",
+            "editor": "textfield"
+        },
+        "linkedin_email": {
+            "title": "LinkedIn email",
+            "type": "string",
+            "description": "Optional. If empty, LINKEDIN_EMAIL from .env or environment variables is used.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "linkedin_password": {
+            "title": "LinkedIn password",
+            "type": "string",
+            "description": "Optional. If empty, LINKEDIN_PASSWORD from .env or environment variables is used.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "max_pages": {
+            "title": "Maximum people pages",
+            "type": "integer",
+            "description": "Maximum number of employee result pages to scrape.",
+            "default": 50,
+            "minimum": 1
+        },
+        "headless": {
+            "title": "Headless browser",
+            "type": "boolean",
+            "description": "Set false locally when LinkedIn asks for manual security verification.",
+            "default": true
+        },
+        "use_apify_proxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Enable Apify Proxy for browser traffic.",
+            "default": false
+        },
+        "proxy_groups": {
+            "title": "Proxy groups",
+            "type": "array",
+            "description": "Apify Proxy groups to use when proxy is enabled.",
+            "default": ["RESIDENTIAL"],
+            "editor": "stringList"
+        },
+        "proxy_country": {
+            "title": "Proxy country",
+            "type": "string",
+            "description": "Two-letter proxy country code.",
+            "default": "IN",
+            "editor": "textfield"
+        },
+        "session_id": {
+            "title": "Session ID",
+            "type": "string",
+            "description": "Stable value used for fingerprint/proxy session and stored login state.",
+            "default": "linkedin_company_employees",
+            "editor": "textfield"
+        }
+    }
+}

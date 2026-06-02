@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/205376/dayforce-hcm/reviews?page=1",
+  "url": "https://www.capterra.com/p/205376/Dayforce-HCM/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Dayforce HCM",
+      "url": "https://www.capterra.com/p/205376/Dayforce-HCM",
+      "rating": "4.3",
+      "reviews_count": "1060",
+      "description": "Dayforce simplifies work with a unified HCM platform for HR, payroll, talent, and more—boosting productivity and compliance at scale. Learn more about Dayforce HCM"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

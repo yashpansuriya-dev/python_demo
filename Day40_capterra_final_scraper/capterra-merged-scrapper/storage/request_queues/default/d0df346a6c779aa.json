@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/211952/access-people-hr-software/reviews?page=1",
+  "url": "https://www.capterra.com/p/211952/Access-People-HR-Software/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Access PeopleHR",
+      "url": "https://www.capterra.com/p/211952/Access-People-HR-Software",
+      "rating": "4.2",
+      "reviews_count": "609",
+      "description": "AI-powered HR and payroll suite for small-to-medium size businesses. One platform for HR, payroll, performance, learning & benefits. Learn more about Access PeopleHR"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

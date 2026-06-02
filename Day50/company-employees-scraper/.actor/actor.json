@@ -1,0 +1,19 @@
+{
+	"$schema": "https://apify.com/schemas/v1/actor.ide.json",
+	"actorSpecification": 1,
+	"name": "company-employees-scraper",
+	"title": "LinkedIn Decision Maker Intelligence Scraper",
+	"description": "Scrapes LinkedIn company employees, prefilters likely decision makers, and enriches selected profiles with current role intelligence.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "python-playwright",
+		"generatedBy": "<FILL-IN-MODEL>"
+	},
+	"input": "./input_schema.json",
+	"output": "./output_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"dockerfile": "../Dockerfile"
+}

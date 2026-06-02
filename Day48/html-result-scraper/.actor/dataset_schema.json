@@ -1,0 +1,54 @@
+{
+  "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "url",
+          "loaded_url",
+          "status",
+          "http_status",
+          "title",
+          "html_length",
+          "html"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "url": {
+            "label": "URL",
+            "format": "link"
+          },
+          "loaded_url": {
+            "label": "Loaded URL",
+            "format": "link"
+          },
+          "status": {
+            "label": "Status",
+            "format": "text"
+          },
+          "http_status": {
+            "label": "HTTP Status",
+            "format": "number"
+          },
+          "title": {
+            "label": "Title",
+            "format": "text"
+          },
+          "html_length": {
+            "label": "HTML Length",
+            "format": "number"
+          },
+          "html": {
+            "label": "HTML",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}

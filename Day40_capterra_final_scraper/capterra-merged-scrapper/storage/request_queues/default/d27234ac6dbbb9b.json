@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/158622/personio/reviews?page=1",
+  "url": "https://www.capterra.com/p/158622/Personio/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Personio",
+      "url": "https://www.capterra.com/p/158622/Personio",
+      "rating": "4.3",
+      "reviews_count": "312",
+      "description": "A centralized HR platform that performs every core HR task key to every company's success: HRM, recruiting, payroll, and more. Learn more about Personio"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

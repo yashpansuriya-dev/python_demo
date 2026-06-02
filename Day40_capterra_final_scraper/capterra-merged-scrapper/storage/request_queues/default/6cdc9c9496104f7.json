@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/153149/rewards-platform/reviews?page=1",
+  "url": "https://www.capterra.com/p/153149/Rewards-Platform/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Xoxoday",
+      "url": "https://www.capterra.com/p/153149/Rewards-Platform",
+      "rating": "4.4",
+      "reviews_count": "261",
+      "description": "Xoxoday is an AI-powered platform offering businesses a comprehensive suite of loyalty, rewards, incentives, and engagement solutions. Learn more about Xoxoday"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

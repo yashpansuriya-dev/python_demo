@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/172127/rippling/reviews?page=1",
+  "url": "https://www.capterra.com/p/172127/Rippling/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Rippling",
+      "url": "https://www.capterra.com/p/172127/Rippling",
+      "rating": "4.9",
+      "reviews_count": "4771",
+      "description": "Run your workforce on the #1 rated HR system. HR, IT, spend & payroll made easy. All-in-one support for your global business. Learn more about Rippling"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

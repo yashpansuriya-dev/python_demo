@@ -1,0 +1,25 @@
+{
+  "unique_key": "https://www.capterra.com/p/205015/deel/reviews?page=1",
+  "url": "https://www.capterra.com/p/205015/Deel/reviews/?page=1",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {},
+    "depth": 1,
+    "retries": 0,
+    "current_page": 1,
+    "product": {
+      "name": "Deel",
+      "url": "https://www.capterra.com/p/205015/Deel",
+      "rating": "4.9",
+      "reviews_count": "4274",
+      "description": "Get insights into your workforce with powerful and flexable reporting that works across payroll, HR, benefits and more. Learn more about Deel"
+    },
+    "all_reviews": []
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": null
+}

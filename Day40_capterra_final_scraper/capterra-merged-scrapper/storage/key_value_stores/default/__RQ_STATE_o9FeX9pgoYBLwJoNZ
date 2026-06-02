@@ -1,12 +1,45 @@
 {
-  "sequence_counter": 1,
-  "forefront_sequence_counter": 0,
-  "forefront_requests": {},
-  "regular_requests": {
-    "https://www.yellowpages.com/search?geo_location_terms=los+angeles&search_terms=restaurants": 0
+  "sequence_counter": 26,
+  "forefront_sequence_counter": 1,
+  "forefront_requests": {
+    "https://www.capterra.com/hr-analytics-software?page=2": 0
   },
-  "in_progress_requests": [],
+  "regular_requests": {
+    "https://www.capterra.com/hr-analytics-software": 0,
+    "https://www.capterra.com/p/132343/ingentis-org-manager/reviews?page=1": 1,
+    "https://www.capterra.com/p/155895/workforcenow/reviews?page=1": 2,
+    "https://www.capterra.com/p/153140/connecteam/reviews?page=1": 3,
+    "https://www.capterra.com/p/172127/rippling/reviews?page=1": 4,
+    "https://www.capterra.com/p/205015/deel/reviews?page=1": 5,
+    "https://www.capterra.com/p/110968/bamboohr/reviews?page=1": 6,
+    "https://www.capterra.com/p/133745/paycor-perform/reviews?page=1": 7,
+    "https://www.capterra.com/p/129232/employee-success-platform/reviews?page=1": 8,
+    "https://www.capterra.com/p/208764/tableau/reviews?page=1": 9,
+    "https://www.capterra.com/p/86714/webpay/reviews?page=1": 10,
+    "https://www.capterra.com/p/66908/workday-hcm/reviews?page=1": 11,
+    "https://www.capterra.com/p/198579/ukg-ready/reviews?page=1": 12,
+    "https://www.capterra.com/p/205376/dayforce-hcm/reviews?page=1": 13,
+    "https://www.capterra.com/p/211952/access-people-hr-software/reviews?page=1": 14,
+    "https://www.capterra.com/p/135366/activtrak/reviews?page=1": 15,
+    "https://www.capterra.com/p/118042/webhr/reviews?page=1": 16,
+    "https://www.capterra.com/p/149254/sprout-hr-payroll/reviews?page=1": 17,
+    "https://www.capterra.com/p/143606/namely/reviews?page=1": 18,
+    "https://www.capterra.com/p/86955/sisense/reviews?page=1": 19,
+    "https://www.capterra.com/p/128705/sagehr/reviews?page=1": 20,
+    "https://www.capterra.com/p/110931/zoho-people/reviews?page=1": 21,
+    "https://www.capterra.com/p/168685/factorial-hr-software/reviews?page=1": 22,
+    "https://www.capterra.com/p/158622/personio/reviews?page=1": 23,
+    "https://www.capterra.com/p/175840/adp-comprehensive-services/reviews?page=1": 24,
+    "https://www.capterra.com/p/153149/rewards-platform/reviews?page=1": 25
+  },
+  "in_progress_requests": [
+    "https://www.capterra.com/p/172127/rippling/reviews?page=1"
+  ],
   "handled_requests": [
-    "https://www.yellowpages.com/search?geo_location_terms=los+angeles&search_terms=restaurants"
+    "https://www.capterra.com/hr-analytics-software?page=2",
+    "https://www.capterra.com/hr-analytics-software",
+    "https://www.capterra.com/p/132343/ingentis-org-manager/reviews?page=1",
+    "https://www.capterra.com/p/153140/connecteam/reviews?page=1",
+    "https://www.capterra.com/p/155895/workforcenow/reviews?page=1"
   ]
 }

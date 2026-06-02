@@ -1,0 +1,103 @@
+{
+    "$schema": "https://apify.com/schemas/v1/input.ide.json",
+    "title": "LinkedIn Decision Maker Intelligence Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "company_url": {
+            "title": "Company URL",
+            "type": "string",
+            "description": "LinkedIn company page URL. The actor also tries common slug variants if this URL is unavailable.",
+            "default": "https://in.linkedin.com/company/techforceglobal",
+            "editor": "textfield"
+        },
+        "linkedin_email": {
+            "title": "LinkedIn email",
+            "type": "string",
+            "description": "Optional. If empty, LINKEDIN_EMAIL from .env or environment variables is used.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "linkedin_password": {
+            "title": "LinkedIn password",
+            "type": "string",
+            "description": "Optional. If empty, LINKEDIN_PASSWORD from .env or environment variables is used.",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "max_pages": {
+            "title": "Maximum people pages",
+            "type": "integer",
+            "description": "Maximum number of employee result pages to scrape.",
+            "default": 50,
+            "minimum": 1
+        },
+        "decision_makers_only": {
+            "title": "Decision makers only",
+            "type": "boolean",
+            "description": "When enabled, only save records classified as decision makers.",
+            "default": false
+        },
+        "max_profiles_to_enrich": {
+            "title": "Maximum profiles to enrich",
+            "type": "integer",
+            "description": "Maximum number of likely decision-maker profiles to visit for current experience extraction.",
+            "default": 50,
+            "minimum": 0
+        },
+        "profile_delay_min_seconds": {
+            "title": "Minimum profile delay seconds",
+            "type": "number",
+            "description": "Minimum random delay before opening a candidate profile.",
+            "default": 4,
+            "minimum": 0
+        },
+        "profile_delay_max_seconds": {
+            "title": "Maximum profile delay seconds",
+            "type": "number",
+            "description": "Maximum random delay before opening a candidate profile.",
+            "default": 9,
+            "minimum": 0
+        },
+        "headless": {
+            "title": "Headless browser",
+            "type": "boolean",
+            "description": "Set false when LinkedIn asks for manual security verification so you can complete the challenge in the browser/live view.",
+            "default": true
+        },
+        "manual_verification_timeout_seconds": {
+            "title": "Manual verification timeout seconds",
+            "type": "integer",
+            "description": "How long to wait when LinkedIn shows a security checkpoint. Use with headless=false, complete the challenge, and rerun with the same session_id.",
+            "default": 600,
+            "minimum": 0
+        },
+        "use_apify_proxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Enable Apify Proxy for browser traffic.",
+            "default": false
+        },
+        "proxy_groups": {
+            "title": "Proxy groups",
+            "type": "array",
+            "description": "Apify Proxy groups to use when proxy is enabled.",
+            "default": ["RESIDENTIAL"],
+            "editor": "stringList"
+        },
+        "proxy_country": {
+            "title": "Proxy country",
+            "type": "string",
+            "description": "Two-letter proxy country code.",
+            "default": "IN",
+            "editor": "textfield"
+        },
+        "session_id": {
+            "title": "Session ID",
+            "type": "string",
+            "description": "Stable value used for fingerprint/proxy session and stored login state.",
+            "default": "linkedin_company_employees",
+            "editor": "textfield"
+        }
+    }
+}
